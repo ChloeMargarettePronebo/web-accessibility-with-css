@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #814242;
+  background-color: #d6c9c932;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #492865;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.navigation-menu {
+  list-style: none;
+  padding: 0;
+}
+.navigation-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+.navigation-menu a {
+  text-decoration: none;
+  color: #0654b3;
+  font-size: 0.95rem;
+}
+.navigation-menu a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #547111;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #002766;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  flex: 1;
+  order: 1;
+}
+.main-content {
+  flex: 2;
+  order: 2;
+}
+
+.large-text {
+  font-size: 20px;
+}
+.high-contrast-text {
+  color: #000;
+  background-color: #fff;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #e7e5e4;
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: auto;
+    color: #44403c;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+}
+
+.project-card a {
+    color: #22b1a6;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #78685d;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
